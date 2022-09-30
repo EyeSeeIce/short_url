@@ -1,0 +1,33 @@
+.link {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+
+  a {
+    width: 50%;
+    word-break: break-all;
+    color: var(--clr-link);
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &:nth-child(2n + 1) {
+    background: var(--clr-bg);
+    border: 1px solid var(--clr-box-shadow);
+  }
+
+  &_clicks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    background: var(--clr-clicks-bg);
+    font-size: 14px;
+    border-radius: 50%;
+  }
+}

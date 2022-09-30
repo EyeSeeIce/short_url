@@ -1,0 +1,19 @@
+.pagination {
+  display: flex;
+  gap: 10px;
+
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 5px;
+    background: var(--clr-pagination-bg);
+    cursor: pointer;
+    border-radius: 5px;
+    &_Active {
+      background: var(--clr-pagination-active);
+    }
+  }
+}

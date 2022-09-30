@@ -1,0 +1,11 @@
+.button {
+  padding-left: 10px;
+  padding-right: 10px;
+  background: var(--clr-button-bg);
+  border: 1px solid var(--clr-button-border);
+  border-radius: 5px;
+  transition: 0.1s;
+  &:active {
+    background: var(--clr-button-active);
+  }
+}

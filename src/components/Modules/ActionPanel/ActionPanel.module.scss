@@ -1,0 +1,15 @@
+.actionPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 20px;
+  margin-bottom: auto;
+  grid-area: action;
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border);
+
+  &_form {
+    display: flex;
+    gap: 10px;
+  }
+}

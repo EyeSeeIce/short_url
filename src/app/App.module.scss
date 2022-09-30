@@ -1,0 +1,21 @@
+@use 'src/assets/styles/mixins' as *;
+@use 'src/assets/styles/variables/breakpoints' as *;
+
+.wrapper {
+  max-width: 1200px;
+  padding: 10px 20px 100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max-content max-content 1fr;
+  grid-template-areas: 'header header' 'action allLinks' 'myLinks allLinks' 'myLinks allLinks';
+
+  @include maxWidth($bp-sDesktop) {
+    gap: 20px;
+  }
+  @include maxWidth($bp-tablet) {
+    grid-template-columns: 1fr;
+    grid-template-areas: 'header' 'action' 'myLinks' 'allLinks';
+  }
+}

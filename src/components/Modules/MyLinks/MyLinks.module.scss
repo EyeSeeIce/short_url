@@ -1,0 +1,11 @@
+.myLinks {
+  grid-area: myLinks;
+
+  &_list {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
